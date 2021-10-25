@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
+
+:root {
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255, 255, 0, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+}
+/* .App {
+  width: 100vw !important;
+  height: 100vh !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0  auto;
+  display: flex !important;
+  
+} */
+
+body {
+  font-family: "Roboto Mono";
+  background-color:gainsboro;
+  margin: 0 auto;
+  padding: 0; 
+}
+
+/*<---------Navbar--------->*/
+nav {
+  z-index: 2;
+}
+.logo {
+  width:4rem;
+}
+
+nav a.nav-link {
+  font-weight: 600;
+  letter-spacing: 0.375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  
+}
+
+.navbar-nav > li > a {
+  margin-right: 12px;
+  margin-left: 12px;
+  text-decoration: none;
+  color: var(--primary-white) !important;
+  border-top: 3px solid var(--primary-dark);
+}
+
+
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-top: 3px solid var(--primary-orange);
+}
+.navbar-nav > li > a:hover {
+  border-top: 3px solid var(--primary-orange);
+}
+/* <------carousel-----> */
+
+.carousel-main{
+  height: 50vh;
+}
+.head-slide{
+  font-weight: 700;
+  color:white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*<---------Player--------->*/
+
+
