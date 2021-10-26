@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactHlsPlayer from 'react-hls-player';
 import './carousel.css';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const CarouselPanlVideo = (props) => {
   const btnContainer = {
@@ -34,22 +35,24 @@ const CarouselPanlVideo = (props) => {
 
   return (
     <React.Fragment>
-      <div >
-      <div className ="Centerlized"><img src={props.article.img ? props.article.img : "defaultImage"} alt="Sliderr_image" /></div>
-      
+
+     
+      <h2 >{props.article.channel_name}</h2>
       <h1 className ="Centerlized">{props.article.channel_name}</h1>
       <h2 className ="Centerlized">{props.article.group}</h2>
       <div style={videoContainer} className ="Centerlized">
         <ReactHlsPlayer
           src={props.article.video_url}
+            controls= 'true'
+            autoPlay= 'true'
+            height= 'auto'
+            width = '1200'
+
           hlsConfig={{
             maxLoadingDelay: 4,
             minAutoBitrate: 0,
             lowLatencyMode: true,
-            controls: true,
-            autoPlay: true,
-            height: 720,
-            width: 900
+            
           }}
         />
       </div>
@@ -64,7 +67,9 @@ const CarouselPanlVideo = (props) => {
           </button>
         </span>
       </div>
-      </div>
+      
+      
+ 
     </React.Fragment>
   );
 

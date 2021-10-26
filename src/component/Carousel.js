@@ -34,7 +34,8 @@ setCurrentSlide((prev) => {
       
         useEffect(() => {
 
-                fetch('https://newsapi.org/v2/everything?domains=wsj.com&apiKey=d3ca5fab3c99469ba519b17354f7978e')
+                // fetch('https://newsapi.org/v2/everything?domains=wsj.com&apiKey=d3ca5fab3c99469ba519b17354f7978e')
+                fetch('https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=d3ca5fab3c99469ba519b17354f7978e')
                 .then(res => res.json())
                 .then(data => {
                     console.log(data)

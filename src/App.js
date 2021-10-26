@@ -8,6 +8,7 @@ import Searchform from "./component/SearchForm";
 import Channels from "./component/Channels";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+
 function App() {
   const [article, setArticle] = useState([]);
   const [country, setCountry] = useState("");
@@ -51,7 +52,9 @@ function App() {
             <Channels />
           </Route>
         </Switch>
+        
       </Router>
+      
     </div>
   );
 }
