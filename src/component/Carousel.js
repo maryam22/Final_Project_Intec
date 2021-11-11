@@ -46,7 +46,7 @@ setCurrentSlide((prev) => {
         
         return (
             <React.Fragment>
-                <h1 className ="Centerlized">
+                 <h1 style={{"marginTop":"35px","textAlign":"center","fontWeight":"bold","fontFamily":"initial","marginBottom":"35px"}}>
                     
                     <small>
                         we have {news ? news.length : 0} news

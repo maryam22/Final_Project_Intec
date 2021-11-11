@@ -6,6 +6,7 @@ import News from "./component/News";
 import Header from "./pages/Header";
 import Searchform from "./component/SearchForm";
 import Channels from "./component/Channels";
+import Contact from "./component/Contact"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 
@@ -50,6 +51,9 @@ function App() {
           </Route>
           <Route exact path="/channels">
             <Channels />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
           </Route>
         </Switch>
         
